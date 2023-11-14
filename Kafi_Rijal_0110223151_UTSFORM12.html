@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        .form-container{
+            padding: 30px;
+            width: 400px;
+            margin: 100px auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        fieldset{
+            padding: 20px;
+            background-color: lightgrey;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-shadow: 0 0 10px lightgrey;
+        }
+        .radio-Mahasiswa{
+            float: right;
+        }
+        .radio-Dosen{
+            float: right;
+        }
+        .radio-Motor{
+            float: right;
+        }
+        .radio-Mobil{
+            float: right;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            float: right;
+        }
+        .form-group{
+            margin-bottom: 1em;
+        }
+        .button-Browse input{
+            float: right;
+            background-color: red;
+            color: white;
+            margin-top: 5px;
+        }
+        .button-Daftar input{
+            float: right;
+            margin-top: 35px;
+            background-color: blue;
+            color: white;
+        }
+        .text{
+            float: right;
+           
+        }
+        select{
+            width: 30%;
+            height: 25px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Registrasi Kendaraan Anda</h2>
+    <fieldset>
+            <form method="post" action="">
+                <div class="Status :"></div>
+                <label for="Status :">Status :</label>
+
+                <div class="radio-Mahasiswa">
+                <input type="radio" id="Mahasiswa" name="pilih">
+                <label for="Mahasiswa">Mahasiswa</label>
+                </div>
+
+                <div class="radio-Dosen">
+                <input type="radio" id="Dosen" name="pilih">
+                <label for="Dosen">Dosen</label>
+                </div>
+
+                <div class="form-group"></div>
+                <label for="NIM/NIDN :">NIM/NIDN :</label>
+                <input type="text" id="NIM/NIDN :">
+
+                <div class="form-group"></div>
+                <label for="Nama Lengkap :">Nama Lengkap :</label>
+                <input type="text" id="Nama Lengkap :">
+
+                <div class="form-group"></div>
+                <label for="Prodi :">Prodi :</label>
+                <select name="Prodi :" id="Prodi :">
+                    <option value="1">Pilih Prodi</option>
+                </select>
+
+                <div class="form-group"></div>
+                <label for="Jenis Kendaraan :">Jenis Kendaraan :</label>
+
+                <div class="radio-Motor">
+                <input type="radio" id="Motor" name="pilih">
+                <label for="Motor">Motor</label>
+                </div>
+
+                <div class="radio-Mobil">
+                <input type="radio" id="Mobil" name="pilih">
+                <label for="Mobil">Mobil</label>
+                </div>
+
+                <div class="form-group"></div>
+                <label for="NoPol :">NoPol :</label>
+                <input type="text" id="NoPol :">
+
+                <div class="form-group"></div>
+                <label for="Merk :">Merk :</label>
+                <input type="text" id="Merk :">
+
+                <div class="form-group"></div>
+                <label for="Upload STNK :">Upload STNK :</label>
+
+                <div class="text">
+                <input type="text">
+                </div>
+
+                <div class="button-Browse">
+                <input type="button" value="Browse" id="Upload STNK :">
+                </div>
+
+                <div class="button-Daftar">
+                    <input type="submit" value="Daftar">
+            </form>
+    </fieldset>
+    </div>
+</body>
+</html>
